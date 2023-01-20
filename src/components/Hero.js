@@ -21,7 +21,7 @@ const Hero = () => {
 				</Link>
 			</article>
 			<article className="img-container">
-				<img src={heroBcg} alt="nice table" className="main-img" />
+				<img src={heroBcg} alt="nice corner at home" className="main-img" />
 				<img src={heroBcg2} alt="person working" className="accent-img" />
 			</article>
 		</Wrapper>
@@ -76,6 +76,8 @@ const Wrapper = styled.section`
 			width: 250px;
 			transform: translateX(-50%);
 			border-radius: var(--radius);
+			box-shadow: 10px -10px 10px 10px rgb(254, 243, 199, 0.2);
+			/* border: 1px solid var(--clr-primary-9); */
 		}
 		.img-container::before {
 			content: '';

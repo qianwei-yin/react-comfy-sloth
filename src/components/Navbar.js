@@ -4,6 +4,7 @@ import logo from '../assets/logo.svg';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { links } from '../utils/constants';
+import Logo from './Logo';
 import CartButtons from './CartButtons';
 import { useProductsContext } from '../context/products_context';
 import { useUserContext } from '../context/user_context';
@@ -17,7 +18,8 @@ const Nav = () => {
 			<div className="nav-center">
 				<div className="nav-header">
 					<Link to="/">
-						<img src={logo} alt="comfy sloth" />
+						{/* <img src={logo} alt="comfy sloth" /> */}
+						<Logo />
 					</Link>
 					<button className="nav-toggle" type="button" onClick={openSidebar}>
 						<FaBars />

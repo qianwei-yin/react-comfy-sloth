@@ -6,6 +6,7 @@ import { FaTimes } from 'react-icons/fa';
 import { links } from '../utils/constants';
 import styled from 'styled-components';
 import CartButtons from './CartButtons';
+import Logo from './Logo';
 import { useUserContext } from '../context/user_context';
 
 const Sidebar = () => {
@@ -16,7 +17,8 @@ const Sidebar = () => {
 		<SidebarContainer>
 			<aside className={`${isSidebarOpen ? 'show-sidebar' : null} sidebar`}>
 				<div className="sidebar-header">
-					<img src={logo} alt="comfy sloth" className="logo" />
+					{/* <img src={logo} alt="comfy sloth" className="logo" /> */}
+					<Logo />
 					<button className="close-btn" type="button" onClick={closeSidebar}>
 						<FaTimes />
 					</button>
